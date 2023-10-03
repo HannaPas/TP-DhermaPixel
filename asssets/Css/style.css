@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
 
-
+/*Css HTML*/
 *,
 html {
     font-family: 'Expletus Sans', cursive;
     color: black;
+
 }
+
 
 * {
     margin: 0;
