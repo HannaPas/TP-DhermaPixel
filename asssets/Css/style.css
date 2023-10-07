@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
 @import url(./Complementos/footer.css);
 @import url(./Complementos/navegador.css);
+@import url(./Complementos/animacionMenu.css);
 @import url(./pages/home.css);
 @import url(./pages/inicioDeSesion.css);
 @import url(./pages/registro.css);

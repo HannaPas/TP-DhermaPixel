@@ -1,0 +1,15 @@
+.footer1 h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.iconosRedes {
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.iconosRedes a{
+    padding-inline: 4px;
+    font-size: 25px;
+}
