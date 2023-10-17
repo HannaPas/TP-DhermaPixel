@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+section article {
+  background-color: white;
+  min-height: 50px;
+  margin: 0.5rem;
+  min-width: 400px;
+  padding: 50px;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+
+form{
+    background-color: white;
+    border: 3px black solid;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    
+}
+
+select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+  }
+
+#sec1 ul li{
+    list-style: circle;
+    padding-bottom: 5px;
+}
