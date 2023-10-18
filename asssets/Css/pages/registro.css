@@ -5,9 +5,11 @@ body {
     padding: 0;
 }
 
-h1 {
+.text1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+    font-size: 30px;
+    margin: 17px;
 }
 
 fieldset {
@@ -17,12 +19,13 @@ fieldset {
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: #5c97d1;
 }
 
-h2 {
+.text2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 28px;
 }
 
 .registro {
@@ -47,7 +50,7 @@ select {
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
-    transition: border-color 0.3s ease;
+
 }
 
 input[type="text"]:focus,
@@ -68,7 +71,7 @@ input[type="submit"] {
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+
 }
 
 input[type="submit"]:hover {
@@ -76,17 +79,26 @@ input[type="submit"]:hover {
 }
 
 
+.centrar-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 .cuenta-existente {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 20px;
 }
 
+
 .cuenta-existente a {
     color: #5c97d1;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+
 }
 
 .cuenta-existente a:hover {
