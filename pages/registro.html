@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asssets/Css/pages/registro.css">
+
     <title>Registro</title>
 </head>
 
@@ -19,15 +21,17 @@
             <form class="registro">
                 <div class="registro">
                     <label for="name">Ingresar Nombre</label>
+                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="name">Ingresar Apellido</label>
+                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="DNI">DNI</label>
-                    <input type="float" maxlength="8" />
+                    <input type="float" maxlength="8" required placeholder="Ingrese Aquí" />
                     <!-- restricción de 8 numeros unicamente-->
                 </div>
 
@@ -47,23 +51,29 @@
                 </div>
 
                 <div class="registro">
+                    <label for="name">Ingresar Contraseña</label>
+                    <input type="password" required placeholder="********" minlength="8"></imput>
+                    <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                </div>
+
+                <div class="registro">
                     <label for="nacimiento">Ingresar fecha de Nacimiento</label>
                     <input type="date" id="meeting-time" name="meeting-time" value="2000-01-01" min="1930-01-01"
-                        max="2010-01-01" />
+                        max="2006-01-01" />
+
+
 
                     <div class="registro">
-                        <label for="name">Ingresar Contraseña</label>
-                        <input type="password" requiered placeholder="********" minlength="8"></imput>
-                        <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                        <input class="btn" type="submit" value="Registrar"></imput>
                     </div>
 
-                    <div class="registro">
-                        <input type="submit" value="Registrar"></imput>
+
+                    <div class="cuenta-existente">
+                        <p>¿Ya tienes una cuenta?</p> <a href="./inicioDeSesión.html">Iniciar Sesión</a>
                     </div>
 
-                    <button type="reset">
-                        <h2>Cancelar</h2>
-                    </button>
+
+
 
                 </div>
             </form>
