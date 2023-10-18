@@ -47,27 +47,28 @@ p {
 .contenedorSN {
     background-color: #ade0db;
     width: 90%;
-    /* Modificamos el ancho para que sea más amplio */
+
     padding: 20px;
-    /* Añadimos un poco de relleno interno para separar el contenido de los bordes del contenedor */
+
     margin: 20px auto;
-    /* Centramos el contenedor y añadimos un margen superior e inferior */
+
     box-sizing: border-box;
-    /* Para incluir el padding dentro del width */
+
 }
 
 .contenedorGris {
     background-color: #d9dbdb;
     width: 90%;
-    /* Modificamos el ancho para que sea más amplio */
+
     height: auto;
-    /* Cambiamos la altura a auto para que se ajuste al contenido interno */
+
     padding: 20px;
-    /* Añadimos un poco de relleno interno */
+
     margin: 20px auto;
-    /* Centramos el contenedor y añadimos un margen superior e inferior */
+
     box-sizing: border-box;
-    /* Para incluir el padding dentro del width */
+
+    text-align: center;
 }
 
 
@@ -75,16 +76,16 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Esto centrará los elementos horizontalmente */
+
 }
 
 .mapa {
 
 
     margin-top: 100px;
-    /* Espacio en la parte superior del mapa */
+
     margin-bottom: 100px;
-    /* Espacio en la parte inferior del mapa */
+
 
 }
 
@@ -93,13 +94,13 @@ p {
 .contenedorInferior {
     display: flex;
     justify-content: space-between;
-    /* Esto separará los dos contenedores en la parte inferior */
+
     width: 80%;
-    /* Ocupa el 80% del ancho del contenedor principal */
+
 }
 
 .contenedorContacto,
 .contenedorSN {
     width: 48%;
-    /* Cada uno ocupará casi la mitad del contenedor inferior, dejando un pequeño espacio en medio */
+
 }
