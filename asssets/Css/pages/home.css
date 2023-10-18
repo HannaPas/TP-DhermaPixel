@@ -5,6 +5,10 @@ html {
 
 }
 
+.text_ {
+    text-align: center;
+}
+
 
 * {
     margin: 0;
