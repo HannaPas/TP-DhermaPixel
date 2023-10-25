@@ -1,19 +1,24 @@
-h1{
-    font-size: 65px;
-    text-align: left;
+.titulo {
+    font-size: 30px;
+    text-align: justify
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
     margin: 0px;
     padding: 0px;
 }
 
-h2{
+h2 {
     font-size: 35px;
-    text-align: left;
+    text-align: center;
     text-decoration: dotted;
     margin-bottom: 20px;
     padding: 0px;
 }
 
-h3{
+h3 {
     font-size: 25px;
     text-align: left;
     text-decoration: dotted;
@@ -21,7 +26,7 @@ h3{
     padding: 0px;
 }
 
-p{
+p {
     font-size: 18px;
     text-align: justify;
     text-decoration: dotted;
@@ -29,12 +34,73 @@ p{
     padding: 0px;
 }
 
-.listacontacto ul li{
+.listacontacto ul li {
     font-size: 18px;
     text-align: justify;
     text-decoration: dotted;
     margin-bottom: 5px;
     padding: 0px;
-    list-style-type:disc;
+    list-style-type: disc;
     list-style-position: inside;
+}
+
+.contenedorSN {
+    background-color: #ade0db;
+    width: 90%;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    box-sizing: border-box;
+
+}
+
+.contenedorGris {
+    background-color: #d9dbdb;
+    width: 90%;
+
+    height: auto;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mapa {
+
+
+    margin-top: 100px;
+
+    margin-bottom: 100px;
+
+
+}
+
+
+
+.contenedorInferior {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+
+}
+
+.contenedorContacto,
+.contenedorSN {
+    width: 48%;
+
 }

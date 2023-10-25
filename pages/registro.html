@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asssets/Css/style.css">
+
     <title>Registro</title>
 </head>
 
@@ -12,22 +14,24 @@
 
     </header>
     <main>
-        <h1>Registro en DhermaPixel</h1>
+        <h1 class="text1">Registro en DhermaPixel</h1>
         <fieldset>
-            <h2> Introduce tus datos </h2>
+            <h2 class="text2"> Introduce tus datos </h2>
 
             <form class="registro">
                 <div class="registro">
                     <label for="name">Ingresar Nombre</label>
+                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="name">Ingresar Apellido</label>
+                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="DNI">DNI</label>
-                    <input type="float" maxlength="8" />
+                    <input type="float" maxlength="8" required placeholder="Ingrese Aquí" />
                     <!-- restricción de 8 numeros unicamente-->
                 </div>
 
@@ -47,30 +51,62 @@
                 </div>
 
                 <div class="registro">
+                    <label for="name">Ingresar Contraseña</label>
+                    <input type="password" required placeholder="********" minlength="8"></imput>
+                    <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                </div>
+
+                <div class="registro">
                     <label for="nacimiento">Ingresar fecha de Nacimiento</label>
                     <input type="date" id="meeting-time" name="meeting-time" value="2000-01-01" min="1930-01-01"
-                        max="2010-01-01" />
+                        max="2006-01-01" />
+
+
 
                     <div class="registro">
-                        <label for="name">Ingresar Contraseña</label>
-                        <input type="password" requiered placeholder="********" minlength="8"></imput>
-                        <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                        <input class="btn" type="submit" value="Registrar"></imput>
                     </div>
 
-                    <div class="registro">
-                        <input type="submit" value="Registrar"></imput>
+
+                    <div class="centrar-contenido">
+                        <div class="no-cuenta">
+                            ¿Ya tienes una cuenta?
+                            <a href="./inicioDeSesión.html">Iniciar Sesión</a>
+                        </div>
                     </div>
 
-                    <button type="reset">
-                        <h2>Cancelar</h2>
-                    </button>
+
+
+
 
                 </div>
             </form>
         </fieldset>
     </main>
-    <footer>
 
+    <footer class="footer1">
+        <center>
+            <img class="logos" src="../asssets/media/icons/Logo-Footer.png">
+        </center>
+
+
+        <div class="iconosRedes">
+
+            <!--Icono de Facebook-->
+            <a href="https://www.facebook.com/profile.php?id=61551860564345"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <!--Icono de Instagram-->
+            <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i
+                    class="fa-brands fa-instagram"></i></a>
+            <!--Icono de Whatsapp-->
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+
+
+        <div>
+            <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+        </div>
     </footer>
 </body>
 

@@ -4,18 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../asssets/Css/style.css">
+
+    <title>Registro</title>
 </head>
 
 <body>
-    <header></header>
-    <main>
+    <header>
 
+    </header>
+    <main class="contenedor-principal">
+        <h1 class="titulo-login">Inicio de Sesión en DhermaPixel</h1>
+        <fieldset>
+            <h2 class="text-d"> Introduce tus datos </h2>
+
+            <form class="inicioDeSesión">
+
+                <div class="contenedor-formulario">
+                    <div class="registro">
+                        <label class="text-c" for="correo">Ingresar dirección de correo</label>
+                        <input type="email" required placeholder="example@gmail.com" />
+                    </div>
+
+                    <div class="registro">
+                        <label for="name">Ingresar Contraseña</label>
+                        <input type="password" required placeholder="********" minlength="8"></imput>
+                        <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                    </div>
+
+                    <div class="centrar-contenido">
+                        <div class="cuenta-existente">
+                            ¿No tienes una cuenta?
+                            <a href="./registro.html">Registrarse Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </form>
+        </fieldset>
     </main>
-    <footer>
+    
+    <footer class="footer1">
+        <center>
+            <img class="logos" src="../asssets/media/icons/Logo-Footer.png">
+        </center>
 
+
+        <div class="iconosRedes">
+
+            <!--Icono de Facebook-->
+            <a href="https://www.facebook.com/profile.php?id=61551860564345"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <!--Icono de Instagram-->
+            <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i
+                    class="fa-brands fa-instagram"></i></a>
+            <!--Icono de Whatsapp-->
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+
+
+        <div>
+            <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+        </div>
     </footer>
-
 </body>
 
 </html>
