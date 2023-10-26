@@ -46,3 +46,23 @@
     width: 350px;
     min-height: 400px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    gap: 0.2px;
+
+}
+
+.inicio-title {
+    font-size: 28px;
+    /* Puedes ajustar según tus necesidades */
+}
+
+#inicio-logo {
+    width: 220px;
+
+    height: auto;
+
+}
