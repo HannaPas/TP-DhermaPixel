@@ -52,8 +52,13 @@ html {
     text-align: left;
 }
 
- .tachado p{
+.tachado p {
     font-size: 14px;
     margin-bottom: 8px;
     text-decoration: line-through;
+}
+
+.btn i {
+    margin-right: 10px;
+
 }
