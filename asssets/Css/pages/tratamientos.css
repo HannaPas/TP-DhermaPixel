@@ -104,8 +104,9 @@ select {
 }
 
 .card-content h3 {
-  font-size: 28px;
+  font-size: 23px;
   margin-bottom: 8px;
+  text-decoration: dotted;
 }
 
 .card-content p {
