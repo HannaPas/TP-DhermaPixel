@@ -1,9 +1,11 @@
 # TP-DhermaPixel
 Trabajo Integrador Codo-Codo
 
-                                        (DOCUMENTACIÓN)
+Link del sitio:                                     
 
 -------------------------------------Proyecto “Dhermapixel”------------------------------------------
+
+Documentación del Proyecto:
 
 Integrantes: Hanna Pastor – Esteban Chimbo – Nahuel Gayoso – Juan Manuel Barbero
 
