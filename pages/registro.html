@@ -21,23 +21,23 @@
             <form class="registro">
                 <div class="registro">
                     <label for="name">Ingresar Nombre</label>
-                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="name">Ingresar Apellido</label>
-                    <input type="text" name="name" id="name" required placeholder="Ingrese Aquí" />
+                    <input type="text" name="apellido" id="apellido" required placeholder="Ingrese Aquí" />
                 </div>
 
                 <div class="registro">
                     <label for="DNI">DNI</label>
-                    <input type="float" maxlength="8" required placeholder="Ingrese Aquí" />
+                    <input type="float" name="dni" id="dni" maxlength="8" required placeholder="Ingrese Aquí" />
                     <!-- restricción de 8 numeros unicamente-->
                 </div>
 
                 <div class="registro">
                     <label for="genero-select">Elegir Genero: </label>
-                    <select name="genero" id="genero-select">
+                    <select name="genero" id="genero">
                         <option value="Masculino">Masculino</option>
                         <option value="Femenino">Femenino</option>
                     </select>
@@ -47,12 +47,13 @@
 
                 <div class="registro">
                     <label for="correo">Ingresar dirección de correo</label>
-                    <input type="email" required placeholder="example@gmail.com" />
+                    <input name="correo" id="genero" type="email" required placeholder="example@gmail.com" />
                 </div>
 
                 <div class="registro">
-                    <label for="name">Ingresar Contraseña</label>
-                    <input type="password" required placeholder="********" minlength="8"></imput>
+                    <label for="contraseña">Ingresar Contraseña</label>
+                    <input name="contraseña" id="contraseña" type="password" required placeholder="********"
+                        minlength="8"></imput>
                     <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
                 </div>
 
@@ -61,30 +62,32 @@
                     <input type="date" id="meeting-time" name="meeting-time" value="2000-01-01" min="1930-01-01"
                         max="2006-01-01" />
 
-
-
-                    <div class="registro">
-                        <input class="btn" type="submit" value="Registrar"></imput>
-                    </div>
-
-
-                    <div class="centrar-contenido">
-                        <div class="no-cuenta">
-                            ¿Ya tienes una cuenta?
-                            <a href="./inicioDeSesión.html">Iniciar Sesión</a>
-                        </div>
-                    </div>
-
-
-
-
-
                 </div>
+
+                <div class="registro">
+                    <input class="btn" type="submit" value="Registrar"></imput>
+                </div>
+
+
+                <div class="centrar-contenido">
+                    <div class="no-cuenta">
+                        ¿Ya tienes una cuenta?
+                        <a href="./inicioDeSesión.html">Iniciar Sesión</a>
+                    </div>
+                </div>
+
+
+
+
+
+
             </form>
         </fieldset>
     </main>
 
 
 </body>
+
+
 
 </html>
