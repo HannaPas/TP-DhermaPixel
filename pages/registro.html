@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+
     <header>
 
     </header>
@@ -18,7 +20,7 @@
         <fieldset>
             <h2 class="text2"> Introduce tus datos </h2>
 
-            <form class="registro">
+            <form class="registro" id="formulario">
                 <div class="registro">
                     <label for="name">Ingresar Nombre</label>
                     <input type="text" name="nombre" id="nombre" required placeholder="Ingrese Aquí" />
@@ -47,7 +49,7 @@
 
                 <div class="registro">
                     <label for="correo">Ingresar dirección de correo</label>
-                    <input name="correo" id="genero" type="email" required placeholder="example@gmail.com" />
+                    <input name="correo" id="correo" type="email" required placeholder="example@gmail.com" />
                 </div>
 
                 <div class="registro">
@@ -58,8 +60,8 @@
                 </div>
 
                 <div class="registro">
-                    <label for="nacimiento">Ingresar fecha de Nacimiento</label>
-                    <input type="date" id="meeting-time" name="meeting-time" value="2000-01-01" min="1930-01-01"
+                    <label for="fNacimiento">Ingresar fecha de Nacimiento</label>
+                    <input type="date" id="fNacimiento" name="fNacimiento" value="2000-01-01" min="1930-01-01"
                         max="2006-01-01" />
 
                 </div>
@@ -85,7 +87,7 @@
         </fieldset>
     </main>
 
-
+    <script src="/asssets/js/formulario.js"> </script>
 </body>
 
 
