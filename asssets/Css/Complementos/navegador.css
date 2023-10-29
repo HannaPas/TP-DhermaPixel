@@ -1,18 +1,38 @@
 .menu {
-    text-align: center;
+    position: relative;
+    /* Esto permitirá que los iconos se posicionen respecto a este contenedor */
+    display: flex;
+    justify-content: center;
+    /* Centrará los elementos escritos */
     padding: 0px;
 }
 
-.menu ul{
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    width: 100%;
+}
+
+.items-principales,
+.iconos-derecha {
     list-style: none;
-    margin: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
     padding-bottom: 40px;
 }
 
-.menu ul li{
-    display: inline-block;
+.menu ul li {
     padding-inline: 25px;
 }
+
 
 .menu li a {
     color: black;
@@ -28,7 +48,41 @@
 }
 
 @keyframes boton-menu {
-    0% { transform: scaleX(1.0);}
-    50% { transform: scaleX(1.15);}
-    100% { transform: scaleX(1.0);}    
+    0% {
+        transform: scaleX(1.0);
+    }
+
+    50% {
+        transform: scaleX(1.15);
+    }
+
+    100% {
+        transform: scaleX(1.0);
+    }
+}
+
+.items-principales {
+    display: flex;
+    /* Establece los elementos de texto en línea */
+    z-index: 1;
+    /* Asegura que estos elementos estén encima de los íconos */
+}
+
+.items-principales li {
+    padding-inline: 10px;
+}
+
+.iconos-derecha {
+    position: absolute;
+
+    right: 0;
+
+    display: flex;
+    z-index: 0;
+
+}
+
+.iconos-derecha li {
+    margin-left: 18px;
+    font-size: 20px;
 }
