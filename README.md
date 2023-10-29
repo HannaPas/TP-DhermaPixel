@@ -52,7 +52,8 @@ comunicación y un mapa para encontrar mejor la ubicación.
 Lista de tareas:
   1. Desarrollo de página web HTML y CSS.
   2. Desarrollo de botones y animaciones con CSS.
-  3. Implementación de una API para el carrusel con Materialize.
+  3. Implementación de Materilize para el carrusel de imagenes.
+  4. Implementación de la API https://sheet.best/ y formulario de Excel de Google
      
 Tecnologías aplicadas:
 
