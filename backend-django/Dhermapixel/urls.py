@@ -20,5 +20,5 @@ from .views import dhermapixel
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("dhermapixel/", dhermapixel.as_view(), name="index")
+    path("", dhermapixel.as_view(), name="index")
 ]
