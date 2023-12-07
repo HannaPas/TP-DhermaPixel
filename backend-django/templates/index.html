@@ -6,8 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+     
     <!--materialize css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--link de iconos-->
@@ -17,8 +16,7 @@
     <!--hoja de Estilos css-->
     <link rel="stylesheet" href="{% static './Css/style.css' %}">
     
-    <link rel="icon" href="{% static '/Media/icons/Logo-Footer.png' %}" type="image/x-icon">
-    
+    <link rel="icon" href="{% static './Media/icons/Logo-Footer.png' %}" type="image/x-icon">
     <title>DhermaPixel</title>
 </head>
 
@@ -30,32 +28,32 @@
     <!--materialize js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--main js-->
-    <script src="./js/main.js"></script>
+    <script src="{% static './js/main.js' %}"></script>
 
 
 
 
     <header>
-        <center> <img class="logos" src="{% static './media/icons/Logo_sitio.png' %}"> </center>
+        <center> <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}"> </center>
     </header>
 
 
 
     <div class="menu">
         <ul class="items-principales">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/pages/promociones.html">Promociones</a></li>
-            <li><a href="/pages/tratamientos.html">Tratamientos</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'promociones' %}">Promociones</a></li>
+            <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
         </ul>
         <ul class="iconos-derecha">
             <li>
-                <a href="./pages/inicioDeSesión.html">
+                <a href="{% url 'inicioDeSesión' %}">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="./pages/inicioDeSesión.html"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+                <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
             </li>
         </ul>
 
@@ -72,19 +70,19 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./Media/imagenes/Estetica1.jpeg" alt="First slide">
+                    <img class="d-block w-100" src="{% static './Media/imagenes/Estetica1.jpeg' %}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./Media/imagenes/Estetica2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="{% static './Media/imagenes/Estetica2.jpg' %}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./Media/imagenes/Estetica3.jpeg" alt="Third slide">
+                    <img class="d-block w-100" src="{% static './Media/imagenes/Estetica3.jpeg' %}" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./Media/imagenes/Estetica4.jpeg" alt="Third slide">
+                    <img class="d-block w-100" src="{% static './Media/imagenes/Estetica4.jpeg' %}" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./Media/imagenes/Estetica5.png" alt="Third slide">
+                    <img class="d-block w-100" src="{% static './Media/imagenes/Estetica5.png' %}" alt="Third slide">
                 </div>
             </div>
         </div>
@@ -97,21 +95,21 @@
 
         <div class="contenedor-tratamientos">
             <div class="trat">
-                <img src="./Media/imagenes/acido-desc.jpg" alt="" />
+                <img src="{% static './Media/imagenes/acido-desc.jpg' %}" alt="" />
 
             </div>
             <div class="trat">
-                <img src="./Media/imagenes/capilar-desc.jpg" alt="" />
+                <img src="{% static './Media/imagenes/capilar-desc.jpg' %}" alt="" />
 
             </div>
             <div class="trat">
-                <img src="./Media/imagenes/php-desc.jpg" alt="" />
+                <img src="{% static './Media/imagenes/php-desc.jpg' %}" alt="" />
 
             </div>
         </div>
 
         <center>
-            <button class="btn" onclick="location.href='./pages/promociones.html';">Ver Mas</button>
+            <button class="btn" onclick="location.href='{% url 'promociones' %}';">Ver Mas</button>
         </center>
 
         <br><br><br>
@@ -122,17 +120,17 @@
 
         <div class="contenedor-tratamientos">
             <div class="trat">
-                <img src="./Media/imagenes/Dermapen.jpg" alt="" />
+                <img src="{% static './Media/imagenes/Dermapen.jpg' %}" alt="" />
             </div>
             <div class="trat">
-                <img src="./Media/imagenes/Mesoterapia-facial.jpg" alt="" />
+                <img src="{% static './Media/imagenes/Mesoterapia-facial.jpg' %}" alt="" />
             </div>
             <div class="trat">
-                <img src="./Media/imagenes/criolipolisis.jpg" alt="" />
+                <img src="{% static './Media/imagenes/criolipolisis.jpg' %}" alt="" />
             </div>
         </div>
         <center>
-            <button class="btn" onclick="location.href='./pages/tratamientos.html';">Ver Mas</button>
+            <button class="btn" onclick="location.href='{% url 'tratamientos' %}';">Ver Mas</button>
         </center>
 
 
@@ -141,7 +139,7 @@
 
     <footer class="footer1">
         <center>
-            <img class="logos" src="./media/icons/Logo-Footer.png">
+            <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
         </center>
 
 
