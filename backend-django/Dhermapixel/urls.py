@@ -43,6 +43,6 @@ urlpatterns = [
     path("mesoterapiaCapilar/", mesoterapiaCapilar.as_view(), name="mesoterapiaCapilar"),
     path("criolipolisis/", criolipolisis.as_view(), name="criolipolisis"),
     path("registro/", registro.as_view(), name="registro"),
-    path('crud/', include('aplicaciones.Estetica.urls')),
+    path('crud/', include('app.Estetica.urls')),
     
 ]
