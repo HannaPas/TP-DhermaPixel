@@ -1,0 +1,18 @@
+.sec {
+    background-color: transparent;
+    /* Esto hará que el fondo sea transparente */
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+}

@@ -1,0 +1,159 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!--materialize css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--link de iconos-->
+  <script src="https://kit.fontawesome.com/8700f71f17.js" crossorigin="anonymous"></script>
+  
+  <!--hoja de Estilos css-->
+  <link rel="stylesheet" href="{% static './Css/style.css' %}" />
+  <title>Tratamientos</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}" />
+    </center>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="items-principales">
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+        <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+      <ul class="iconos-derecha">
+        <li>
+          <a href="{% url 'inicioDeSesión' %}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <br>
+    <h1 style="text-align: center">Tratamientos</h1>
+
+
+    <div class="card-container">
+      <div class="card">
+        <img src="{% static './Media/imagenes/Dermapen.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Dermapen</h3><br></br>
+          <p>
+            1 sesión: $9.000.-
+          </p><br></br>
+          <a href="{% url 'dermapen' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/Estetica3.jpeg' %}" alt="" />
+
+        <div class="card-content">
+          <h3>Plasma Rico en Plaquetas</h3><br></br>
+          <p>
+            1 sesión: $20.000.-
+          </p><br></br>
+          <a href="{% url 'prp' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/Acido-Hialuronico.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Acido hialurónico</h3><br></br>
+          <p>
+            1 zona: $250.000.-
+          </p><br></br>
+          <a href="{% url 'hialuronico' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/Mesoterapia-facial.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Mesoterapia Facial</h3><br></br>
+          <p>
+            4 sesiones: $20.000.-<br></br>
+            8 sesiones: $35.000.-
+          </p>
+          <a href="{% url 'meso' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/mesoterapia-capilar.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Mesoterapia Capilar</h3><br></br>
+          <p>
+            4 sesiones: $15.000.-<br></br>
+            8 sesiones: $25.000.-
+          </p>
+          <a href="{% url 'mesoterapiaCapilar' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/criolipolisis.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Criolipólisis</h3><br></br>
+          <p>
+            1 sesión: $6.000.-
+          </p><br></br>
+          <a href="{% url 'criolipolisis' %}" class="btn">Mas Info Aquí</a>
+          <br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<footer class="footer1">
+  <center>
+    <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
+  </center>
+
+
+  <div class="iconosRedes">
+
+    <!--Icono de Facebook-->
+    <a href="https://www.facebook.com/profile.php?id=61551860564345"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--Icono de Instagram-->
+    <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+    <!--Icono de Whatsapp-->
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+  </div>
+
+
+  <div>
+    <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+  </div>
+</footer>
+
+</html>

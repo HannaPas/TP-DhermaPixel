@@ -1,0 +1,68 @@
+.centrar-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.no-cuenta {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.no-cuenta a {
+    color: #5c97d1;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.no-cuenta a:hover {
+    color: #4a7cb7;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.inicioDeSesión {
+    width: 80%;
+    max-width: 400px;
+}
+
+.titulo-login {
+    padding-left: 50px;
+}
+
+.contenedor-formulario {
+    width: 350px;
+    min-height: 400px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    gap: 0.2px;
+
+}
+
+.inicio-title {
+    font-size: 28px;
+    /* Puedes ajustar según tus necesidades */
+}
+
+#inicio-logo {
+    width: 220px;
+
+    height: auto;
+
+}

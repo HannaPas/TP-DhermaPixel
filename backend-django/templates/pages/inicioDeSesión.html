@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static './Css/style.css' %}">
+    <link rel="icon" href="{% static './Media/icons/Logo-Footer.png' %}" type="image/x-icon">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="contenedor-principal">
+
+        <div class="container">
+            <h1 class="inicio-title">Inicio de Sesión en DhermaPixel</h1>
+            <img id="inicio-logo" src="{% static './Media/icons/Logo-Footer.png' %}">
+        </div>
+
+
+
+        <fieldset>
+            <h2 class="text-d"> Introduce tus datos </h2>
+
+            <form class="inicioDeSesión">
+
+                <div class="contenedor-formulario">
+                    <div class="registro">
+                        <label class="text-c" for="correo">Ingresar dirección de correo</label>
+                        <input type="email" required placeholder="example@gmail.com" />
+                    </div>
+
+                    <div class="registro">
+                        <label for="name">Ingresar Contraseña</label>
+                        <input type="password" required placeholder="********" minlength="8"></imput>
+                        <!--El pattern sirve para indicar la cantidad de caracteres necesarios en la contraseña-->
+                    </div>
+
+                    <div class="centrar-contenido">
+                        <div class="no-cuenta">
+                            ¿No tienes una cuenta?
+                            <a href="{% url 'registro' %}">Registrarse Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </form>
+        </fieldset>
+    </main>
+
+
+</body>
+
+</html>
