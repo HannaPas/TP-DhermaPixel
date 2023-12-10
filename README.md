@@ -10,7 +10,7 @@ Link del Excel (BASE DE DATOS): https://docs.google.com/spreadsheets/d/1Gb9NPv74
 
 Documentación del Proyecto:
 
-Integrantes: Hanna Pastor – Esteban Chimbo – Nahuel Gayoso – Juan Manuel Barbero
+Integrantes: Hanna Pastor – Esteban Chimbo 
 
 
 ¿Qué es Dhermapixel y cuál es su enfoque?
@@ -68,3 +68,8 @@ final.
 usuario, asegurando que la interfaz sea intuitiva.
   3. Realizar pruebas manuales de funcionamiento: Verificar el correcto
 funcionamiento de todos los botones y redirección de las páginas.
+
+------------------BACKEND-------------------
+Desarrollo de un crud para poder manejar la parte de pacientes, editar los campos de cada uno y en caso necesario eliminarlo. De esta forma se puede llevar
+de forma ordenada un listado de los pacientes con sus datos y tratamientos a realizarse.
+Se utilizó la herramienta de DJANGO para poder realizar esta parte del proyecto, como así también BOOTSTRAP y JavaScript
