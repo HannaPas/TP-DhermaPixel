@@ -35,3 +35,6 @@ class criolipolisis(TemplateView):
     
 class registro(TemplateView):
     template_name = "pages/registro.html"
+
+class crud(TemplateView):
+    template_name = "../Estetica/templates/base.html"

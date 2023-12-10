@@ -28,6 +28,7 @@ from .views import meso
 from .views import mesoterapiaCapilar
 from .views import criolipolisis
 from .views import registro
+from .views import crud
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -44,5 +45,6 @@ urlpatterns = [
     path("criolipolisis/", criolipolisis.as_view(), name="criolipolisis"),
     path("registro/", registro.as_view(), name="registro"),
     path('crud/', include('app.Estetica.urls')),
+    path('crud/', crud.as_view(), name="crud"),
     
 ]
