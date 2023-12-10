@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--materialize css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--link de iconos-->
+  <script src="https://kit.fontawesome.com/8700f71f17.js" crossorigin="anonymous"></script>
+  
+  
+  
+  <!--hoja de Estilos css-->
+  <link rel="stylesheet" href="{% static './Css/style.css' %}">
+  <title>Promociones</title>
+</head>
+
+<body>
+
+  <!--materialize js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--main js-->
+  <script src="{% static './js/main.js' %}"></script>
+
+  <header>
+    <center> <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}"> </center>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="items-principales">
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+        <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+      <ul class="iconos-derecha">
+        <li>
+          <a href="{% url 'inicioDeSesión' %}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <h2>Promociones</h2>
+    <!--Imagenes de las diferentes promociones-->
+    <div class="card-container">
+      <div class="card">
+        <img src="{% static './Media/imagenes/Dermapen-desc.jpg' %} " alt="" />
+        <div class="card-content">
+          <h3>Dermapen</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>1 sesión: $9.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>1 sesión: $8.100.-</p>
+          <br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/php-desc.jpg' %}" alt="" />
+
+        <div class="card-content">
+          <h3>Plasma Rico en Plaquetas</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>1 sesión: $20.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>1 sesión: $18.000.-</p>
+          <br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/acido-desc.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Acido hialurónico</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>1 zona: $250.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>1 zona: $200.000.-</p>
+          <br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/facial-desc.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Mesoterapia Facial</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>4 sesiones: $20.000.-</p>
+          </div>
+          <div class="tachado">
+            <p>8 sesiones: $35.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>4 sesiones: $19.000.-</p>
+          <p>8 sesiones: $33.250.-</p>
+          <br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/capilar-desc.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Mesoterapia Capilar</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>4 sesiones: $15.000.-</p>
+          </div>
+          <div class="tachado">
+            <p>8 sesiones: $25.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>4 sesiones: $13.500.-</p>
+          <p>8 sesiones: $22.500.-</p>
+          <br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static './Media/imagenes/criolipolisi-desc.jpg' %}" alt="" />
+        <div class="card-content">
+          <h3>Criolipólisis</h3>
+          <br>
+          <p>Antes:</p>
+          <div class="tachado">
+            <p>1 sesión: $6.000.-</p>
+          </div>
+          <br>
+          <p>Ahora</p>
+          <p>1 sesión: $5.700.-</p>
+          <br><br><br><br>
+          <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>Agendar Turno</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<footer class="footer1">
+  <center>
+    <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
+  </center>
+
+
+  <div class="iconosRedes">
+
+    <!--Icono de Facebook-->
+    <a href="https://www.facebook.com/profile.php?id=61551860564345"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--Icono de Instagram-->
+    <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+    <!--Icono de Whatsapp-->
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+
+  <div>
+    <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+  </div>
+</footer>
+
+</html>

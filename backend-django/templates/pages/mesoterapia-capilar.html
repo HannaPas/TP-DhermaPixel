@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!--materialize css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--link de iconos-->
+  <script src="https://kit.fontawesome.com/8700f71f17.js" crossorigin="anonymous"></script>
+  
+  <!--hoja de Estilos css-->
+  <link rel="stylesheet" href="{% static './Css/style.css' %}" />
+  <link rel="stylesheet" href="{% static './Css/pages/tratamientos.css' %}" />
+  <title>Mesoterapia Capilar</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}" />
+    </center>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="items-principales">
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+        <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+      <ul class="iconos-derecha">
+        <li>
+          <a href="{% url 'inicioDeSesión' %}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <h1 style="text-align: center">Mesoterapia Capilar</h1>
+
+
+    <section>
+      <article class="sec">
+        <p>
+          ¿Te preocupa la caída de cabello o la pérdida de densidad? Si es así presta mucha atención porque hoy vamos a
+          contarte la solución. La mesoterapia capilar es uno de los métodos más utilizados para frenar la caída del
+          cabello y darle brillo, tanto en hombres como en mujeres.
+        </p>
+        <h3>¿En qué consiste la mesoterapia capilar? </h3>
+        <p>
+          La mesoterapia es una técnica que se basa en la multipunción con microagujas de sustancias, medicamentos y/o
+          vitaminas a nivel intradérmico. Esta técnica se puede aplicar, entre otros, mediante la mesoterapia capilar
+          que consiste en la liberación progresiva de micronutrientes y factores de crecimiento del cabello. Con esto se
+          contribuye al crecimiento más sano y fuerte del pelo, y a frenar la caída del cabello.
+          Con este tratamiento conseguimos mejorar la circulación de la sangre, de manera que se incrementa también el
+          grosor y el volumen del cabello, consiguiendo así que tu pelo sea más resistente y de mayor calidad.
+
+        </p>
+        <h3>¿Qué es la mesoterapia capilar con PRP?</h3>
+        <p>
+          Es la técnica por la cual se realiza una pequeña extracción de sangre del paciente y se inyecta el plasma rico
+          en plaquetas mediante microinyecciones en la zona capilar.<br></br>
+          La mesoterapia capilar, además, puede aplicarse como un tratamiento único o bien combinando con otros
+          tratamientos. En nuestra clínica de Burriana siempre valoramos cada caso particularmente y te aconsejamos cuál
+          es el mejor tratamiento para que luzcas el pelazo que tanto mereces.
+        </p>
+        <h3>¿Qué necesitas saber de la mesoterapia capilar?</h3>
+        <p>
+          Te alegrará leer que el procedimiento es prácticamente indoloro, rápido y mínimamente invasivo. En el momento
+          de la aplicación se pueden notar unas leves molestias y es posible que los días siguientes al tratamiento la
+          zona tratada esté un poco más sensible.<br></br>
+          La duración de la aplicación de este tratamiento oscila entre 20 y 30 minutos, nada en comparación con los
+          asombrosos resultados que presenta. ¡Te lo aseguramos!<br></br>
+          Los resultados se empiezan a ver pasados los 3 meses desde la primera sesión. Puede haber resultados a corto y
+          a largo plazo, todo dependerá de cada paciente y de su tratamiento específico. En cualquier caso, la Dra.
+          Encarna Sorribes analizará el caso de cada paciente para determinar el número de sesiones necesarias. Estarás
+          en las mejores manos.<br></br>
+          No dudes en consultarnos y hacernos llegar
+          todas tus preguntas. Será todo un placer para nosotros resolvértelas y cuidar de ti como necesitas.
+        </p>
+
+        <br><br>
+        <!-- BOTON -->
+        <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>¿Quieres adquirir este
+          tratamiento? </a>
+        <br>
+
+        <a href="{% url 'tratamientos' %}" class="btn">Volver</a>
+      </article>
+    </section>
+  </main>
+</body>
+
+<footer class="footer1">
+  <center>
+    <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
+  </center>
+
+
+  <div class="iconosRedes">
+
+    <!--Icono de Facebook-->
+    <a href="https://www.facebook.com/profile.php?id=61551860564345"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--Icono de Instagram-->
+    <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+    <!--Icono de Whatsapp-->
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+  </div>
+
+
+  <div>
+    <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+  </div>
+</footer>
+
+</html>

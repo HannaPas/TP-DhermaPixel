@@ -1,0 +1,23 @@
+/* Estilos base para el botón "Ver Más" */
+.btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px 24px;
+    color: #000000;
+    background-color: #46aba3;
+    border: none;
+    border-radius: 50px;
+    justify-content: center;
+
+
+
+}
+
+
+.btn:hover {
+    background-color: #7acfba;
+
+    transform: scale(1.05);
+
+}

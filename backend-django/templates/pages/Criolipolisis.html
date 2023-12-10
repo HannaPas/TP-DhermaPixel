@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!--materialize css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--link de iconos-->
+  <script src="https://kit.fontawesome.com/8700f71f17.js" crossorigin="anonymous"></script>
+  
+  <!--hoja de Estilos css-->
+  <link rel="stylesheet" href="{% static './Css/style.css' %}" />
+  <link rel="stylesheet" href="{% static './Css/pages/tratamientos.css' %}" />
+  <title>Criolipólisis</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}" />
+    </center>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="items-principales">
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+        <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+      <ul class="iconos-derecha">
+        <li>
+          <a href="{% url 'inicioDeSesión' %}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <h1 style="text-align: center">Criolipólisis</h1>
+
+
+    <section>
+      <article class="sec">
+        <p>
+          La criolipólisis es una técnica que utiliza el frío para eliminar la grasa. Es relativamente nueva, pero está
+          dando tantos resultados positivos y es tan poco invasiva que cada vez son más las personas que ya la tienen
+          por la alternativa de la liposucción tradicional.
+        </p>
+        <h3>Los fundamentos de la criolipólisis:</h3>
+        <p>
+          Esta técnica requiere de un aparato que aplica frío en las zonas con más adipocitos (células de grasa) y los
+          hace entrar en apoptosis (se rompen y, por tanto, se eliminan). Se utiliza sobre todo en la zona abdominal y
+          de glúteos, ya que son las zonas donde más se concentra la grasa y donde la reducción es más visible. Este
+          proceso es dermatológico, y solo afecta a la grasa subcutánea. Una vez se han roto esas células de grasa, se
+          eliminará por la orina de forma natural. Por eso, los resultados
+        </p>
+        <h3>Cómo realizar la criolipólisis:</h3>
+        <p>
+          La sesión durará entre una y dos horas y se deben tener todos los aparatos preparados para que el cliente se
+          sienta seguro en el proceso. Es un tratamiento muy personalizado, de ahí el rango de tiempo tan amplio en el
+          que se mueve la técnica.<br></br>
+          Se requiere o un equipo y una membrana protectora de la piel. El aparato consta de un gran bloque que
+          refrigera y muestra la temperatura y una manguera con un cabezal que succiona parte de la piel. Para no dañar
+          la piel por las bajas temperaturas se coloca una membrana.<br></br>
+          El propio paciente deberá ir a un especialista para saber si se puede someter al tratamiento y seleccionar las
+          zonas en las que realizarlo, aunque la recomendación general es hacer en una sesión una única zona a elegir
+          entre:<br></br>
+        <h6>- Abdomen y/o caderas</h6>
+        <h6>- Muslos y su cara interna </h6>
+        <h6>- Glúteos (parte trasera) </h6>
+        <h6>- Cara interna de rodilla</h6>
+        <h6>- Brazos </h6>
+        <h6>- Flancos (ambos)</h6>
+        <h6>- Pliegue escapular </h6>
+        <h6>-Zona inguinal </h6> <br>
+        <p>Dependiendo de la zona y del volumen, se requerirán de dos a
+          cuatro sesiones. Tras estas, se debe hacer un masaje y esperar unas semanas para ver los resultados. Estos son
+          progresivos y más fácilmente vistos si se comienza una dieta a la par. </p>
+        </p>
+        <h3>Ventajas y Desventajas de la criolipólisis:</h3>
+        <p>
+        <h6> <b> VENTAJAS: </b></h6>
+        <H6> - No es invasiva</H6>
+        <h6> - No hay tiempo de inactividad tras el tratamiento</h6>
+        <h6> - Se puede compaginar con dieta y ejercicio </h6>
+        <h6> - No requiere de anestesia. </h6>
+        <h6> - Se realiza de forma rápida </h6>
+        <h6> - El resultado es progresivo y permanente</h6>
+        <br>
+        <h6> <b> DESVENTAJAS: </b></h6>
+        <h6> -No es indolora, dependiendo del umbral del dolor de cada persona será más o menos</h6>
+        <h6> -También se nota tirantez, hormigueo y calambres en la piel</h6>
+        <h6> - La zona se enrojece tras el tratamiento</h6>
+        <h6> - Pueden aparecer hematomas</h6>
+
+        </p>
+
+        <br><br>
+        <!-- BOTON -->
+
+        <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>¿Quieres adquirir este
+          tratamiento? </a>
+        <br>
+
+        <a href="{% url 'tratamientos' %}" class="btn">Volver</a>
+
+
+      </article>
+    </section>
+  </main>
+</body>
+
+<footer class="footer1">
+  <center>
+    <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
+  </center>
+
+
+  <div class="iconosRedes">
+
+    <!--Icono de Facebook-->
+    <a href="https://www.facebook.com/profile.php?id=61551860564345"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--Icono de Instagram-->
+    <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+    <!--Icono de Whatsapp-->
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+  </div>
+
+
+  <div>
+    <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+  </div>
+</footer>
+
+</html>

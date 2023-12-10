@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!--materialize css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--link de iconos-->
+  <script src="https://kit.fontawesome.com/8700f71f17.js" crossorigin="anonymous"></script>
+  
+  <!--hoja de Estilos css-->
+  <link rel="stylesheet" href="{% static './Css/style.css' %}" />
+  <link rel="stylesheet" href="{% static './Css/pages/tratamientos.css' %}" />
+  <title>Plasma Rico en Plaquetas</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <img class="logos" src="{% static './Media/icons/Logo_sitio.png' %}" />
+    </center>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="items-principales">
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+        <li><a href="{% url 'tratamientos' %}">Tratamientos</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+      </ul>
+      <ul class="iconos-derecha">
+        <li>
+          <a href="{% url 'inicioDeSesión' %}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'inicioDeSesión' %}"> <i class="fa-solid fa-user" style="color: #030303;"></i> </a>
+
+        </li>
+      </ul>
+    </div>
+    <h1 style="text-align: center">Plasma Rico en Plaquetas</h1>
+
+
+    <section>
+      <article class="sec">
+        <p>
+          El PRP o Plasma Rico en
+          Plaquetas, es una sustancia biológica que fabrica nuestro organismo. Esta característica en particular; el
+          hecho de que la fabrique nuestro propio cuerpo, le confiere mayor seguridad al tratamiento, porque está exenta
+          de productos químicos y de cualquier tipo de reacción alérgica.
+        </p>
+        <h3>¿Cómo obtenemos el Plasma Rico en Plaquetas?</h3>
+        <p>
+          El tratamiento con PRP es sencillo, y lo podemos dividir en 3 pasos:<br></br>
+          1. Lo primero que debemos hacer, es centrarnos en la materia prima, para ello, debemos extraer sangre del
+          propio
+          paciente. Sería algo similar a un análisis de sangre.<br></br>
+          2. Luego la muestra de sangre es procesada. Para obtener el
+          Plasma Rico en Factores de Crecimiento, es imprescindible centrifugar esa sangre y así conseguir el PRP, que
+          es lo que necesitamos para poder comenzar el tratamiento. En algunos casos, podemos añadir vitaminas,
+          oligoelementos y/o ácido hialurónico, dependiendo de cada caso en particular.<br></br>
+          3. Cuando ya tenemos preparado el PRP, ya estamos listos para comenzar el
+          tratamiento.Puede aplicarse en el
+          escote, el cuello, la cara, las manos e incluso en el cuero cabelludo, para fortalecer el cabello.
+        </p>
+        <h3>Beneficios del PRP</h3>
+        <p>
+          El tratamiento estético con PRP, no sólo es bueno para rejuvenecer la piel y parecer más joven; también está
+          indicado para tratar el acné, las cicatrices, o la pérdida de cabello. Esta técnica es muy beneficiosa, tanto
+          para mujeres como para hombres.
+          Si tu objetivo es rejuvenecer zonas como el escote, el cuello, el tercio medio
+          facial te recomendamos este tratamiento de medicina estética.
+
+          El Plasma Rico en Factores de Crecimiento, aporta una serie de beneficios a tu piel, entre los cuales
+          destacaremos:
+        <ul>
+          <h6>
+            <ol>1. Regeneración celular.</ol>
+            <ol>2. Mejora su coloración.</ol>
+            <ol>3. Estimula la producción de colágeno y elastina.</ol>
+            <ol>4. Disminuye las arrugas que muestran las líneas de expresión.</ol>
+
+            <ol>5. Es un tratamiento natural.</ol>
+            <ol>6. Aumenta su elasticidad.</ol>
+            <ol>7. Incrementa el grosor.</ol>
+            <ol>8. Consigue un aumento de la luminosidad y tersura.</ol>
+          </h6>
+        </ul>
+
+
+        <h6>Dependiendo de tus necesidades y del tiempo que necesites, te aconsejaremos un tratamiento con PRP, u otro
+          que
+          se adapte mejor en tu caso.</h6>
+
+        <br>
+        <br>
+        <!-- BOTON -->
+        <a href="{% url 'inicioDeSesión' %}" class="btn"> <i class="fas fa-calendar-alt"></i>¿Quieres adquirir este
+          tratamiento? </a>
+        <br>
+
+        <a href="{% url 'tratamientos' %}" class="btn">Volver</a>
+      </article>
+    </section>
+  </main>
+</body>
+
+<footer class="footer1">
+  <center>
+    <img class="logos" src="{% static './Media/icons/Logo-Footer.png' %}">
+  </center>
+
+
+  <div class="iconosRedes">
+
+    <!--Icono de Facebook-->
+    <a href="https://www.facebook.com/profile.php?id=61551860564345"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--Icono de Instagram-->
+    <a href="https://instagram.com/dhermapixel_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+    <!--Icono de Whatsapp-->
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+  </div>
+
+
+  <div>
+    <h4> &#169; Copyright 2023 - Todos los derechos reservados - Grupo 9 </h4>
+  </div>
+</footer>
+
+</html>
