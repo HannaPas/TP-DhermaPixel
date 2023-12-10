@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from .views import dhermapixel
 from .views import promociones
 from .views import tratamientos
@@ -42,5 +42,7 @@ urlpatterns = [
     path("meso/", meso.as_view(), name="meso"),
     path("mesoterapiaCapilar/", mesoterapiaCapilar.as_view(), name="mesoterapiaCapilar"),
     path("criolipolisis/", criolipolisis.as_view(), name="criolipolisis"),
-    path("registro/", registro.as_view(), name="registro")
+    path("registro/", registro.as_view(), name="registro"),
+    path('crud/', include('aplicaciones.Estetica.urls')),
+    
 ]

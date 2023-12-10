@@ -1,0 +1,78 @@
+{% extends "./base.html"%}
+
+{%block title%}Gestión de Pacientes{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <h3>Gestión de Pacientes</h3>
+        <div class="card">
+            <div class="card-body">
+                <form action="/crud/registrarPaciente/" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="number" id="txtID" name="txtID" class="form-control" placeholder="ID" maxlength="6" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre"  maxlength="50" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="txtTratamiento" name="txtTratamiento" class="form-control" placeholder="Tratamiento"  maxlength="50" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" id="txtPrecio" name="txtPrecio" class="form-control" placeholder="Precio"  maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Telefono"  maxlength="15" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="datetime-local" id="txtFecha" name="txtFecha" class="form-control" placeholder="Fecha"  maxlength="12" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn block text-white"> Guardar </button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+        <div class="table-responsive py-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr >
+                        <th >ID</th>
+                        <th >Nombre</th>
+                        <th >Tratamiento</th>
+                        <th >Precio</th>
+                        <th >Telefono</th>
+                        <th >Fecha</th>
+                        <th colspan="2", >Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <h3>Listado de Pacientes</h3>
+                    {% for c in pacientes %}
+                    <tr>
+                        <td>{{c.id}}</td>
+                        <td>{{c.nombre}}</td>
+                        <td>{{c.tratamiento}}</td>
+                        <td>{{c.precio}}</td>
+                        <td>{{c.telefono}}</td>
+                        <td>{{c.fecha}}</td>
+                        <td><a href="/crud/editarPaciente/{{c.id}}" class="btn btn-info"></a> Editar </td>
+                        <td><a href="/crud/eliminarPaciente/{{c.id}}" class="btn btn-danger btnEliminacion"></a> Eliminar </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
