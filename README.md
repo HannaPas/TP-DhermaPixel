@@ -1,7 +1,7 @@
 # TP-DhermaPixel
 Trabajo Integrador Codo-Codo
 
-Link del sitio: https://peppy-rolypoly-b520d2.netlify.app                                    
+                                
 Link del Excel (BASE DE DATOS): https://docs.google.com/spreadsheets/d/1Gb9NPv742MCW82nJjrG5NhcJXxNB4ZdavLt5j4-FEKU/edit?hl=es#gid=0
 
 
